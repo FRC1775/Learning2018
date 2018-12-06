@@ -11,7 +11,6 @@ public class MotorSubsystem extends Subsystem {
     
     @Override
     protected void initDefaultCommand() {
-    	setDefaultCommand(new  Pressure());
 		// Set the default command for a subsystem here. 
     	// This command runs whenever any other command isn't running.
         // setDefaultCommand(new Command()); - Should create a new Command class
@@ -21,8 +20,8 @@ public class MotorSubsystem extends Subsystem {
     public static void driveMotor(double speed) {
     	if (RobotMap.switchSensor.get() == false) {
     		RobotMap.motorController.setSpeed(0);
+		}else {
+			RobotMap.motorController.setSpeed(speed);
 		}
-		else RobotMap.motorController.setSpeed(speed);
-    	
-    
+    }
 }
