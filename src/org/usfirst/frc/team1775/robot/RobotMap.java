@@ -11,7 +11,8 @@ import edu.wpi.first.wpilibj.Talon;
  */
 public class RobotMap {
     public static Talon motorController;
-    public static DigitalInput clickeySwitch; 
+    public static DigitalInput switchSensor;
+    
 	// For example to map the left and right motors, you could define the
 	// following variables to use with your drivetrain subsystem.
 	// public static int leftMotor = 1;
@@ -23,8 +24,8 @@ public class RobotMap {
 	// public static int rangefinderModule = 1;
 	
 	public static void init() {
-		clickeySwitch = new DigitalInput(9);
-		motorController = new Talon(5); 
+	    motorController = new Talon(5); // Create a new Talon class
+	    switchSensor = new DigitalInput (9);
 		// Create a new Talon class
     }
   

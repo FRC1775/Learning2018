@@ -37,7 +37,7 @@ public class OI {
 	public static Joystick myJoystick;
 	
 	public void init () {
-	    myJoystick = new Joystick(0) ; // Create a Joystick
+	    myJoystick = new Joystick(0); // Create a Joystick
 	    // JoystickButton button = new JoystickButton(driver, 1);
 	    // button.whileHeld(new DoSomething());
 	}
